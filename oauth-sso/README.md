@@ -4,14 +4,14 @@
 
 1. `sso-authorization-server` is a Keycloak Authorization Server wrapped as a Spring Boot application
 2. There are two OIDC-Connect Clients registered in the Authorization Server:
-First -
-   1. Client Id: ssoClient-1
-   2. Client secret: ssoClientSecret-1
-   3. Redirect Uri: http://localhost:8082/ui-one/login/oauth2/code/custom
-And second -
-   1. Client Id: ssoClient-2
-   2. Client secret: ssoClientSecret-2
-   3. Redirect Uri: http://localhost:8084/ui-two/login/oauth2/code/custom  
+   1. First -
+      1. Client Id: ssoClient-1
+      2. Client secret: ssoClientSecret-1
+      3. Redirect Uri: http://localhost:8082/ui-one/login/oauth2/code/custom
+   2. And second -
+      1. Client Id: ssoClient-2
+      2. Client secret: ssoClientSecret-2
+      3. Redirect Uri: http://localhost:8084/ui-two/login/oauth2/code/custom  
 3. `sso-resource-server` is a Spring Boot based RESTFul API, acting as a backend Application
 4. `sso-client-app-1` and `sso-client-app-2` are two identical Spring MVC Thymeleaf App acting our front end. They are available at [http://localhost:8082/ui-one/](http://localhost:8082/ui-one) and [http://localhost:8084/ui-two/](http://localhost:8084/ui-two/) respectively.
 5. There are two users registered in the Authorization Server:
